@@ -3,10 +3,10 @@ pipeline {
   stages {
     stage('checkout') {
       steps {
-        git(url: 'https://github.com/akyb/ChefDemo', branch: 'master')
+        git(url: 'https://github.com/akyb/ChefDemo.git', branch: 'master')
       }
     }
-    stage('') {
+    stage('error') {
       steps {
         sh 'java -jar ChefDemo/*.jar'
       }
